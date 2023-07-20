@@ -1,0 +1,37 @@
+/*
+  Localizable.strings
+  game1a2b
+
+  Created by Cheng Yan Yang on 2023/7/18.
+  
+*/
+
+"Game"="猜數字遊戲";
+"Tutorial"="玩法教學";
+
+
+"4 unique numbers"="4個不重複的數字";
+"Guess"="猜這個數字";
+"You win"="你贏了";
+"Restart"="重新開始";
+"You guessed the number correctly,\nYou have guessed %lld times total!"="你猜對這個數字了，\n共猜了 %lld 次！";
+
+
+"1A2B is a classic number guessing game. You will get a corresponding prompt after each guess. Your goal is to guess the number selected by the computer."="1A2B是一款經典的猜數字遊戲，在每次猜測後你會獲得相應的提示，你的目標是猜出電腦所選擇的數字。";
+"Game rules"="遊戲規則";
+"1. The computer chooses a four-digit number as the answer, and each number is unique."="1. 電腦選擇一個四位數字作為答案，每位數字都不重複。";
+"2. The player guesses a four-digit number as the answer."="2. 玩家猜一個四位數字作為答案。";
+"3. The computer will give corresponding prompts according to the guessed answers, and the prompts are represented by \"A\" and \"B\":"="3. 電腦根據猜測答案給出對應的提示，提示以\"A\"和\"B\"表示：";
+"\t\"A\" means the number is correct and in the correct position."="\t\"A\"代表數字正確且位置正確。";
+"\t\"B\" means the number is correct but the position is not correct."="\t\"B\"代表數字正確但位置不正確。";
+"4. The player proceeds to the next round of guessing according to the prompts until the answer is correct."="4. 玩家根據提示進行下一輪猜測，直到猜中答案。";
+"5. The player makes strategic adjustments based on the results of each guess to improve the chance of guessing the answer."="5. 玩家根據每次猜測的結果，進行策略調整，提高猜中答案的機會。";
+"Game corresponding prompt example"="遊戲提示範例";
+"Suppose the answer chosen by the computer is \"1234\", and the player guesses \"5678\" for the first time, the prompt given by the computer is \"0A0B\", which means that no number is correct."="假設電腦選擇的答案是「1234」，玩家第一次猜測「5678」，電腦給出的提示為「0A0B」，表示沒有任何數字正確。";
+"The player guesses \"4321\" for the second time, and the computer gave a prompt of \"0A4B\", indicating that there are four correct numbers, but none of the positions are correct."="玩家第二次猜測「4321」，電腦給出的提示為「0A4B」，表示有四個數字正確，但位置都不正確。";
+"The player guesses \"1243\" for the third time, and the computer prompts \"2A2B\", indicating that two numbers are correct and in the correct position, and the other two numbers are correct but in the wrong position."="玩家第三次猜測「1243」，電腦給出的提示為「2A2B」，表示有兩個數字正確且位置正確，另外兩個數字正確但位置不正確。";
+"Game strategy advice"="遊戲策略建議";
+"1. The initial guess is a four-digit number chosen at random and adjusted for each guess."="1. 初始猜測可以隨機選擇一個四位數字，並根據每次猜測結果進行調整。";
+"2. According to the hints of each guess, some impossible numbers can be excluded, and the numbers with higher probability can be guessed first."="2. 根據每次猜測的提示，可以排除一些不可能的數字，並優先猜測可能性更高的數字。";
+"Game over condition"="遊戲結束條件";
+"The player guesses the number selected by the computer. That is, the guessed answer is completely consistent with the answer. The game is over, and the player wins."="玩家猜中了電腦設定的數字，即猜測答案完全與答案相符，遊戲結束，玩家獲勝。";
