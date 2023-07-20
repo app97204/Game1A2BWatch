@@ -14,25 +14,37 @@ extension StringProtocol {
 }
 
 struct ContentView: View {
+    @AppStorage("score") private var bestScore:Int = -1
     var body: some View {
         NavigationView{
             ScrollView{
                 VStack(spacing: 15) {
+                    if(bestScore != -1){
+                        HStack(spacing: 10){
+                            Image(systemName: "trophy.fill")
+                                .controlSize(.regular)
+                            Text("Best: \n\(bestScore) times")
+                                .frame(width: 100)
+                                
+                        }
+                    }
                     NavigationLink {
                         GameView()
                     } label: {
-                        HStack(spacing: 20.0){
+                        HStack(spacing: 10){
                             Image(systemName: "gamecontroller.fill")
                             Text("Game")
+                                .frame(width: 100)
                         }
                     }
                     .buttonStyle(.borderedProminent)
                     NavigationLink {
                         GuideView()
                     } label: {
-                        HStack(spacing: 20.0){
+                        HStack(spacing: 10){
                             Image(systemName: "questionmark.circle.fill")
                             Text("Tutorial")
+                                .frame(width: 100)
                         }
                     }
                 }

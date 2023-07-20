@@ -40,6 +40,7 @@ struct GameView: View {
     @State private var guessNum = ""
     @State private var gameOver = false
     @State private var guesses:[Guess] = []
+    @AppStorage("score") private var bestScore:Int = -1
     var body: some View {
         ScrollView{
             VStack (spacing: 10){
@@ -78,7 +79,11 @@ struct GameView: View {
                         guesses.append(Guess(id: guesses.count + 1,num: guessNum, a: a, b: b))
                         guessNum = ""
                         if a == 4{
+                            if(guesses.count < bestScore || bestScore == -1){
+                                bestScore = guesses.count
+                            }
                             gameOver = true
+                            
                             WKInterfaceDevice().play(.success)
                         }
                         
@@ -99,7 +104,7 @@ struct GameView: View {
             })
             .font(.body)
         }.navigationTitle("Game")
-         .animation(.easeInOut, value: guesses.count)
+            .animation(.easeInOut, value: guesses.count)
     }
 }
 

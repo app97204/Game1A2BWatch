@@ -6,6 +6,7 @@
   
 */
 
+"Best: \n%lld times"="最佳紀錄：\n%lld次";
 "Game"="猜數字遊戲";
 "Tutorial"="玩法教學";
 
